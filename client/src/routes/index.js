@@ -17,6 +17,7 @@ import login from './login';
 import register from './register';
 import content from './content';
 import error from './error';
+import map from './map';
 
 export default {
 
@@ -29,6 +30,7 @@ export default {
     register,
     content,
     error,
+    map
   ],
 
   async action({ next, render, context }) {

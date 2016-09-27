@@ -19,6 +19,7 @@ function Navigation({ className }) {
       <Link className={s.link} to="/login">Log in</Link>
       <span className={s.spacer}>or</span>
       <Link className={cx(s.link, s.highlight)} to="/register">Sign up</Link>
+      <Link className={cx(s.link, s.highlight)} to="/map">Map</Link>
     </div>
   );
 }
