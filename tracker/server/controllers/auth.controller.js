@@ -37,7 +37,8 @@ function login(req, res, next) {
     .catch(e => {
       const err = new APIError('Authentication error', httpStatus.UNAUTHORIZED, true);
       next(err)
-    });
+    })
+    .finally(() => console.log("jwt authentication completed for user "+req.body.username));
 }
 
 /**
